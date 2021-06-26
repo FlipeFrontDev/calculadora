@@ -6,39 +6,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora</title>
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script type="text/javascript" src="js/app.js"></script>
+
 </head>
 
 <body>
-  <section class="grid grid-template-areas">
 
-    <input disabled class="display">
+  <div class="container">
 
-    <button class="item clear button-operations">AC</button>
-    <button class="item plus-minus button-operations-right">+/-</button>
-    <button class="item percent button-operations">%</button>
-    <button class="item buttonision button-operations-right">÷</button>
+    <section class="grid grid-template-areas">
 
-    <button class="item seven button-numbers">7</button>
-    <button class="item eight button-numbers">8</button>
-    <button class="item nine button-numbers">9</button>
-    <button class="item multiplication button-operations-right">X</button>
+      <input disabled id="input-value" class="display">
 
-    <button class="item four button-numbers">4</button>
-    <button class="item five button-numbers">5</button>
-    <button class="item six button-numbers">6</button>
-    <button class="item minus button-operations-right">-</button>
+      <button onclick="clearInput()" class="item clear button-operations">AC</button>
+      <button onclick="invertValue()" class="item plus-minus button-operations">+/-</button>
+      <button onclick="percent()" class="item percent button-operations">%</button>
+      <button class="item buttonision button-operations-right">÷</button>
 
-    <button class="item one button-numbers">1</button>
-    <button class="item two button-numbers">2</button>
-    <button class="item three button-numbers">3</button>
-    <button class="item plus button-operations-right">+</button>
+      <button onclick="insertValues(7)" class="item seven button-numbers">7</button>
+      <button onclick="insertValues(8)" class="item eight button-numbers">8</button>
+      <button onclick="insertValues(9)" class="item nine button-numbers">9</button>
+      <button onclick="insertValues('*')" class="item multiplication button-operations-right">X</button>
 
-    <button class="item zero button-numbers">0</button>
-    <button class="item point button-numbers">,</button>
-    <button class="item three button-numbers">3</button>
-    <button class="item equal button-operations-right">=</button>
+      <button onclick="insertValues(4)" class="item four button-numbers">4</button>
+      <button onclick="insertValues(5)" class="item five button-numbers">5</button>
+      <button onclick="insertValues(6)" class="item six button-numbers">6</button>
+      <button onclick="insertValues('-')" class="item minus button-operations-right">-</button>
 
-  </section>
+      <button onclick="insertValues(1)" class="item one button-numbers">1</button>
+      <button onclick="insertValues(2)" class="item two button-numbers">2</button>
+      <button onclick="insertValues(3)" class="item three button-numbers">3</button>
+      <button onclick="insertValues('+')" class="item plus button-operations-right">+</button>
+
+      <button onclick="insertValues('0')" class="item zero button-numbers">0</button>
+      <button onclick="insertValues('.')" class="item point button-numbers">,</button>
+      <button onclick="calculate()" class="item equal button-operations-right">=</button>
+
+    </section>
+  </div>
 </body>
 
 </html>
