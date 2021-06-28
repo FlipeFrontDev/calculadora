@@ -1,6 +1,6 @@
 let calc = false;
 
-function insertValues(num) {
+exports.insertValues =  function(num) {
 
   if (calc == true) {
 
@@ -12,10 +12,11 @@ function insertValues(num) {
   document.getElementById('input-value').value = input + num
 
   /* console.log(input); */
+  console.log(num);
 
 };
 
-function calculate() {
+exports.calculate = function() {
 
   calc = true;
 
@@ -25,13 +26,13 @@ function calculate() {
 
 }
 
-function clearInput() {
+exports.clearInput = function() {
 
   document.getElementById('input-value').value = "";
 
 }
 
-function invertValue() {
+exports.invertValue = function() {
 
   calculate();
 
@@ -40,11 +41,11 @@ function invertValue() {
 
 }
 
-function percent() {
-/*   clicks++;
-
-  console.log(clicks); */
-
-  const input = document.getElementById('input-value').value;
-  document.getElementById('input-value').value = parseFloat((input * 0.01));
-}
+exports.percent = function() {
+  /*   clicks++;
+  
+    console.log(clicks); */
+  
+    const input = document.getElementById('input-value').value;
+    document.getElementById('input-value').value = parseFloat((input * 0.01));
+  }
