@@ -1,3 +1,13 @@
 # Readme
 
-Projeto de uma calculadora simples com HTML, CSS Grid layout e Javascript
+Projeto de uma calculadora simples.
+
+**Desafio:**
+
+Criar uma calculadora utilizando HTML, CSS e Javascript
+
+**Requisitos:**
+
+  * A aplicação deve limpar a tela ao iniciar uma nova operação;
+  * Deve utilizar CSS grid layout para estilização;
+  * Deve realizar operações de forma otimizada com funções/ métodos JS.
