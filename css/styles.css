@@ -1,9 +1,13 @@
+/*Definindo estilos-padrão*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "helvetica neue" sans-serif;
 }
+
+/*Estilizando container*/
 
 .container {
   background: linear-gradient(#686a6c, #f1a23d);
@@ -14,6 +18,8 @@
   align-content: center;
 }
 
+/*Estilizando section que organiza o grid-layout*/
+
 section {
   display: grid;
   height: 480px;
@@ -21,6 +27,8 @@ section {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
 }
+
+/*Estilizando botões*/
 
 .item {
   color: #fff;
@@ -40,6 +48,8 @@ section {
   color: #4a494f;
 }
 
+/*Estilizando display*/
+
 .display {
   background-color: #4a494f;
   opacity: 0.7;
@@ -51,6 +61,8 @@ section {
   color: #fff;
   padding: 15px;
 }
+
+/*Estilizando botões de número e operações*/
 
 .button-operations-right {
   background-color: #f1a23d;
