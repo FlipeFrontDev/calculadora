@@ -14,7 +14,8 @@ function insertValues(num) {
 
   /*Recebe os valores das entradas realizadas (cliques nos mumeros)*/
 
-  const input = document.getElementById('input-value').value
+  const input = document.getElementById('input-value').value;
+
   document.getElementById('input-value').value = input + num
 
 };
